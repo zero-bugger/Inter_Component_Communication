@@ -1,0 +1,8 @@
+<div style="text-align:center">
+  <h1>
+    Marvellous Infosystems : Component Communication
+    <!-- Send data to child component-->
+    <app-subcomponent (emitter)="message=$event"></app-subcomponent>
+    <p>{{message}}</p>
+  </h1>
+</div>
