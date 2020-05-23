@@ -11,8 +11,13 @@ export class ChildComponent implements OnInit {
   @Output() public Event=new EventEmitter();
   @Input() public mydata="";
   public mycolor="red"
+  books:string[];
   public str="";
-  constructor() { }
+
+  constructor() { 
+    this.books=["Angulario",'Android For Dummies','Artificial ','Node JS in action','Big Data for Dummies']
+
+  }
 
   ngOnInit(): void {
   }

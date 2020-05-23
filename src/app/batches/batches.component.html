@@ -6,14 +6,10 @@
     <title>Batches</title>
 </head>
 <body>
-    <h1 [style.color]="mycolor">Technologies</h1>
-        <ul>
-            <li>Angular</li>
-            <li>Node JS</li>
-            <li>Andriod</li>
-            <li>Big Data</li>
-            <li> Artificial Intelligence</li>
-        </ul>
+    <h1>Hello</h1>
+    <ul *ngFor="let value of batches">
+        <li>{{value.Name}} - {{value.Fees}} - {{value.Duration}}</li>
+      </ul>
     
 </body>
 </html>

@@ -10,11 +10,8 @@
         <h1 [style.color]="mycolor">Books</h1>
         <div > 
             <ul>
-                <li>Angulario</li>
-                <li>Android For Dummies</li>
-                <li>Artificial Intelligence with Python</li>
-                <li>Node JS in action</li>
-                <li>Big Data for Dummies</li>
+                <li *ngFor="let book of books">{{book}}</li>
+                
             </ul>
         </div>
     </div>

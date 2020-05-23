@@ -7,13 +7,20 @@ import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
 import { BatchesComponent } from './batches/batches.component';
 import { WrongcomponentComponent } from './wrongcomponent/wrongcomponent.component';
+import { DemonComponent } from './demon/demon.component';
+import { ArithmeticService } from './arithmetic.service';
+import { StringService } from './string.service';
+import { Child2Component } from './child2/child2.component';
+import { NumberService } from './number.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
     BatchesComponent,
-    WrongcomponentComponent
+    WrongcomponentComponent,
+    DemonComponent,
+    Child2Component
   ],
   imports: [
     BrowserModule,
@@ -21,7 +28,7 @@ import { WrongcomponentComponent } from './wrongcomponent/wrongcomponent.compone
     AppRoutingModule,
     
   ],
-  providers: [],
+  providers: [StringService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

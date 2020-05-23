@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+</head>
+<body>  
+    <h1>Hello</h1>
+    <!-- <h1 style="text-align:center">Assignment -10 </h1>
+    <h2 style="text-align:center"> Solution 3</h2>
+  
+    <div style="text-align:center" *ngIf="prime; then primenumber else notprimenumber" ></div>
+    <ng-template #primenumber>    
+        <h3 style="text-align:center" >{{input1}} - is Prime Number </h3>
+    </ng-template>
+    <ng-template #notprimenumber> 
+        <h3 style="text-align:center" >{{input1}} - is  Not Prime Number </h3>
+    </ng-template>
+
+    <h3 style="text-align:center"> Input String : {{input}}</h3>
+    <h3 style="text-align:center">   Capital Letter Count: {{count}} </h3> -->
+    <ul *ngFor="let value of batches">
+        <li>{{value.Name}} - {{value.Fees}} - {{value.Duration}}</li>
+      </ul>
+</body>
+</html>

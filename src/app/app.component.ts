@@ -12,9 +12,15 @@ export class AppComponent
   public title="Home"
   public size;
 
+
+
   public length(value){
     this.size=value.length;
   }
- 
+   public values = '';
+
+  public onKey(event: any) { 
+    this.values = event.target.value.length ;
+  }
 
 }
